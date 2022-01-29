@@ -226,8 +226,8 @@ header .caixa{
     width: 100%;
 }
 .item_projeto{
-    max-width: 380px;
-    min-height: 360px;
+    max-width: 260px;
+    min-height: 340px;
     background-color: var(--bg-escuro-1);
     border: solid 1px var(--amarelo-1);
     margin: 15px;
