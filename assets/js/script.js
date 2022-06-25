@@ -1,3 +1,67 @@
+const c = (item) => document.querySelector(item);
+const cs = (item) => document.querySelectorAll(item);
+
+/*botões*/
+const btReact = c('.bt_react');
+const btHtml = c('.bt_html');
+const btWordPress = c('.bt_wordpress');
+const bttodos = c('.bt_todos');
+
+/*itens projetos*/
+const itemHtml = cs('.html');
+const itemReact = cs('.reactjs');
+const itemWordPress = cs('.wordpress');
+
+
+const displayNone = () => {
+    itemHtml.forEach((item) => {
+        item.classList.add("removeitem");
+    });
+    itemReact.forEach((item) => {
+        item.classList.add("removeitem");
+    });
+    itemWordPress.forEach((item) => {
+        item.classList.add("removeitem");
+    });
+}
+const displayBlock = () => {
+    itemHtml.forEach((item) => {
+        item.classList.remove("removeitem");
+    });
+    itemReact.forEach((item) => {
+        item.classList.remove("removeitem");
+    });
+    itemWordPress.forEach((item) => {
+        item.classList.remove("removeitem");
+    });
+}
+
+const exibeHTML = () => {
+    displayNone();
+    itemHtml.forEach((item) => {
+        item.classList.remove("removeitem");
+    });
+};
+
+const exibeReact = () => {
+    displayNone();
+    itemReact.forEach((item) => {
+        item.classList.remove("removeitem");
+    });
+};
+
+const exibeWordPress = () => {
+    displayNone();
+    itemWordPress.forEach((item) => {
+        item.classList.remove("removeitem");
+    });
+};
+
+btHtml.addEventListener('click', exibeHTML);
+btReact.addEventListener('click', exibeReact);
+btWordPress.addEventListener('click', exibeWordPress);
+bttodos.addEventListener('click', displayBlock);
+
 window.addEventListener('scroll', function () {
     if (window.scrollY > 400) {
         window.document.querySelector('.scrollbutton').style.display = 'block';
@@ -69,7 +133,7 @@ function smoothScrollTo(endX, endY, duration) {
             clearInterval(timer);
         }
         window.scroll(newX, newY);
-    }, 1000 / 60); // 60 fps
+    }, 1000 / 60); /* 60 fps*/
 };
 
 
