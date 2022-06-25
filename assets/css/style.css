@@ -305,6 +305,7 @@ header .caixa {
     text-decoration: none;
     padding: 60px 40px;
     box-sizing: border-box;
+    display: block;
 }
 
 .item_projeto p {
