@@ -290,7 +290,7 @@ header .caixa {
 
 .item_projeto {
     max-width: 260px;
-    min-height: 300px;
+    min-height: 380px;
     background-color: var(--bg-escuro-1);
     border: solid 1px var(--amarelo-1);
     margin: 15px;
@@ -306,6 +306,7 @@ header .caixa {
     padding: 60px 40px;
     box-sizing: border-box;
     display: block;
+    min-height: 380px;
 }
 
 .item_projeto p {
