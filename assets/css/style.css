@@ -97,6 +97,7 @@ body {
 header {
     background-color: var(--bg-escuro-1);
     min-height: 10px;
+    position: relative;
 }
 
 header .caixa {
@@ -390,6 +391,21 @@ footer.footer p {
 }
 
 @media(max-width: 820px) {
+    .logo {
+        max-width: 40px;
+    }
+
+    .div_barra_menu_mobile {
+        width: 32px;
+        height: 5px;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 9;
+    }
+
     .menu_mobile_icon {
         display: flex;
     }
@@ -451,7 +467,13 @@ footer.footer p {
 
     .item_projeto {
         box-sizing: border-box;
-        padding: 10px 30px;
+        padding: 6px 15px;
+        min-height: 300px;
+    }
+
+    .item_projeto a {
+        padding: 10px 18px;
+        min-height: 160px;
     }
 
     .item_projeto img {
