@@ -1,6 +1,7 @@
 :root {
     --amarelo-1: #ffb636;
     --branco-1: #fff;
+    --branco-2: #c1c1c1;
     --bg-escuro-1: #1f1f23;
     --bg-escuro-2: #1B1A20;
     --text-footer: #787878;
@@ -27,6 +28,35 @@
     width: 40px;
     height: 6px;
     background-color: var(--amarelo-1);
+}
+/* div container modelo */
+.div_container_modelo{
+    display: none;
+}
+.div_live_preview{
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: var(--amarelo-1);
+    width: 90px;
+    position: absolute;
+    top: -20px;
+    margin-bottom: 16px;
+    transition: all ease .2s;
+}
+.div_live_preview:after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid var(--amarelo-1);
 }
 
 /* botão scroll */
@@ -291,24 +321,25 @@ header .caixa {
 }
 
 .item_projeto {
-    max-width: 260px;
-    min-height: 380px;
+    max-width: 320px;
+    padding: 30px 20px;
     background-color: var(--bg-escuro-1);
     border: solid 1px var(--amarelo-1);
     margin: 15px;
     border-radius: 6px;
+    transition: all ease .2s;
 }
-
+.item_projeto:hover {
+    transform: scale(1.2);
+}
 .removeitem {
     display: none;
 }
 
 .item_projeto a {
     text-decoration: none;
-    padding: 60px 40px;
+    color: #fff;
     box-sizing: border-box;
-    display: block;
-    min-height: 380px;
 }
 
 .item_projeto p {
@@ -326,6 +357,49 @@ header .caixa {
 
 .item_projeto:hover img {
     opacity: 1;
+}
+.div_link_code,
+.div_description_project{
+    display: flex;
+    padding: 12px;
+}
+.div_link_code{
+    justify-content: space-around;
+}
+.div_title_projeto,
+.div_code_github{
+    width: 100%;
+    font-size: 14px;
+    padding: 6px;
+    position: relative;
+}
+.div_code_github:before{
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: var(--branco-2);
+    display: inline-block;
+    margin: 4px 0;
+}
+.div_title_projeto a:hover,
+.div_code_github a:hover{
+    color: var(--amarelo-1);
+}
+
+.div_description_project{
+    background-color: var(--bg-escuro-2);
+}
+.div_tecnologias_item,
+.div_description_item{
+    width: 100%;
+    font-size: 15px;
+    padding: 6px;
+}
+.div_tecnologias_item{
+    color: var(--branco-2);
+}
+.div_description_item{
+   color: var(--branco-1);
 }
 
 .titulo_projeto {

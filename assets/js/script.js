@@ -104,7 +104,7 @@ function scrollToPosition(to) {
 
 
 // Caso deseje suporte a browsers antigos / que não suportam scroll smooth nativo
-/**
+/*
 //   Smooth scroll animation
 //   @param {int} endX: destination x coordinate
 //   @param {int) endY: destination y coordinate
