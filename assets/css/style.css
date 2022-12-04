@@ -2,7 +2,8 @@
     --amarelo-1: #ffb636;
     --branco-1: #fff;
     --branco-2: #c1c1c1;
-    --bg-escuro-1: #1f1f23;
+    /* --bg-escuro-1: #1f1f23; */
+    --bg-escuro-1: #08070b;
     --bg-escuro-2: #1B1A20;
     --text-footer: #787878;
 }
@@ -12,11 +13,12 @@
 }
 
 ::selection {
-    background-color: var(--escuro-1);
+    background-color: var(--bg-escuro-1);
     color: var(--branco-1);
 }
 
 .menu_mobile_icon {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 30px;
@@ -26,7 +28,7 @@
 
 .div_barra_menu_mobile {
     width: 40px;
-    height: 6px;
+    height: 3px;
     background-color: var(--amarelo-1);
 }
 /* div container modelo */
@@ -83,6 +85,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    overflow-y: scroll;
 }
 
 .caixa {
@@ -126,16 +129,16 @@ body {
 
 header {
     background-color: var(--bg-escuro-1);
-    min-height: 10px;
-    position: relative;
 }
 
 header .caixa {
     justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
 }
 
 .section_topo {
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     background-color: var(--bg-escuro-1);
@@ -146,13 +149,16 @@ header .caixa {
 }
 
 .logo {
-    max-width: 60px;
-    padding: 10px;
+    padding: 6px 18px;
 }
-
-.logo img {
-    max-width: 100%;
-    box-sizing: border-box;
+.logo a{
+    font-size: 48px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--branco-1);
+}
+.logo a:hover{
+    color: var(--amarelo-1);
 }
 
 .menu ul {
@@ -176,13 +182,10 @@ header .caixa {
 
 .menu ul a:hover {
     color: var(--amarelo-1);
+    background-color: var(--bg-escuro-2);
 }
 
 @media(min-width: 821px) {
-    .menu_mobile_icon {
-        display: none;
-    }
-
     .menu ul {
         display: flex;
     }
@@ -200,6 +203,7 @@ header .caixa {
     font-weight: 700;
     font-size: 3.0em;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .title span {
@@ -208,16 +212,11 @@ header .caixa {
 }
 
 .title p {
-    color: var(--branco-1);
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
-    color: #787878;
+    color: var(--branco-1);
     font-family: 'Roboto';
-}
-
-.image_topo {
-    width: 100%;
-    max-width: 550px;
+    text-align: center;
 }
 
 .image_topo img {
@@ -228,13 +227,13 @@ header .caixa {
     background-color: var(--bg-escuro-2);
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    padding: 40px 10px;
-    min-height: 100vh;
+    padding: 10px;
     box-sizing: border-box;
 }
 
 .section_sobre .caixa {
     max-width: 920px;
+    min-height: 80vh;
 }
 
 .titulo_secao_sobre:after {
@@ -264,6 +263,9 @@ header .caixa {
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image_sobre img {
@@ -274,7 +276,38 @@ header .caixa {
     box-sizing: border-box;
 }
 
-
+.section_carreira{
+    background-color: var(--bg-escuro-1);
+    padding: 80px 10px;
+}
+.section_carreira .caixa{
+    flex-direction: column;
+}
+.div_content_carreira{    
+    margin: 10px 0;
+    padding: 20px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.section_carreira h2,
+.section_carreira p{
+    color: var(--branco-1);
+    font-weight: normal;
+}
+.title_cargo{
+    font-size: 1.5em;
+    font-weight: bold !important;
+}
+.title_empresa{
+    font-size: 17px;
+    font-weight: bold !important;
+    color: var(--amarelo-1);
+}
+.title_empresa span{
+    font-size: 0.9em;
+    font-weight: normal;
+    color: var(--branco-1);
+}
 
 .section_portfolio {
     background-color: var(--bg-escuro-1);
@@ -294,22 +327,24 @@ header .caixa {
 }
 
 .tipo_projeto button {
-    background-color: var(--amarelo-1);
+    background-color: var(--branco-1);
+    border: solid 1px var(--branco-1);    
+    color: var(--bg-escuro-1);
     padding: 10px 15px;
     cursor: pointer;
-    border: solid 1px var(--amarelo-1);
     margin: 6px;
+    font-weight: 600;
 }
 
 .tipo_projeto button:hover {
-    background-color: var(--bg-escuro-1);
+    background-color: var(--amarelo-1);
     border: solid 1px var(--amarelo-1);
-    color: var(--amarelo-1);
+    color: var(--bg-escuro-1);
 }
 
 .tipo_projeto button:active {
     background-color: var(--branco-1);
-    border: solid 1px var(--bg-escuro-1);
+    border: solid 1px var(--branco-1);
     color: var(--bg-escuro-1);
 }
 
@@ -412,10 +447,12 @@ header .caixa {
 }
 
 .section_contato {
-    background-color: var(--bg-escuro-2);
+    background-color: var(--bg-escuro-1);
     color: #fff;
-    padding: 40px 10px;
     min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section_contato .caixa {
@@ -452,12 +489,14 @@ header .caixa {
 
 /* footer */
 footer.footer {
-    background-color: var(--bg-escuro-2);
-    padding: 12px;
-    border-top: solid 1px var(--text-footer);
+    background-color: var(--bg-escuro-1);
+    min-height: 10vh;
     color: var(--text-footer);
     text-align: center;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer.footer p {
@@ -475,7 +514,6 @@ footer.footer p {
     }
 
     header {
-        position: fixed;
         width: 100%;
         z-index: 9;
     }
@@ -500,7 +538,6 @@ footer.footer p {
     }
 
     .section_topo {
-        min-height: 65vh;
         padding: 20px;
     }
 

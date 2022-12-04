@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Márcio Moraes - Front End</title>
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/menu_mobile.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="caixa">
+        <div class="logo">
+          <a href="./">
+              M
+          </a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre mim</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Lista de Menu Mobile -->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+
+          <!-- Overlay content -->
+          <div class="overlay-content">
+            <a href="index.html" onclick="closeNav()">Home</a>
+            <a href="sobre.html" onclick="closeNav()">Sobre mim</a>
+            <a href="projetos.html" onclick="closeNav()">Projetos</a>
+            <a href="contato.html" onclick="closeNav()">Contato</a>
+          </div>
+        </div>
+
+        <div class="menu_mobile_icon" onclick="openNav()">
+          <div class="div_barra_menu_mobile"></div>
+          <div class="div_barra_menu_mobile"></div>
+          <div class="div_barra_menu_mobile"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section_portfolio" id="portfolio">
+        <div class="caixa">
+            <div class="title">
+                <h1 style="text-align:center;">
+                    Veja alguns <span>Projetos</span> que já desenvolvi
+                </h1>
+                <p>A maioria dos projetos que desenvolvi foram de empresas de terceiros e por isso não poderei
+                    exibí-los aqui. Caso precise de algo específico é só fala comigo!!</p>
+
+                <div class="tipo_projeto">
+                    <button class="bt_todos">Todos</button>
+                    <button class="bt_html">HTML, CSS, JS</button>
+                    <button class="bt_react">React JS</button>
+                    <button class="bt_wordpress">WordPress</button>
+                </div>
+            </div>
+
+            <div class="div_insert_projetos projetos_home"></div>
+
+        </div>
+    </section>
+      <div class="div_container_modelo">
+        <div class="item_projeto">
+            <img src="" alt="">
+            
+            <div class="div_link_code">
+                <div class="div_title_projeto">
+                    <div class="div_live_preview">
+                        Preview
+                    </div>
+                    <a href="" target="_blank" class="live_preview">---</a>
+                </div>
+                <div class="div_code_github">
+                    <a href="" target="_blank">Code</a>
+                </div>
+            </div>
+            <div class="div_description_project">
+                <div class="div_tecnologias_item">
+                    #---
+                </div>
+                <div class="div_description_item">
+                    ---
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+      <p>Márcio Moraes - 2022</span></p>
+  
+        <div onclick="subirTela()" class="scrollbutton animate__animated animate__bounce animate__infinite">
+            <div>
+                <img src="assets/icons/arrow_top.png" alt="">
+            </div>
+        </div>
+    </footer>
+  
+    
+    <script type="text/javascript" src="assets/js/projetos_dados.js"></script>
+    <script type="text/javascript" src="assets/js/projetos.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="assets/js/menu_mobile.js"></script>
+  </body>
+  
+  </html>

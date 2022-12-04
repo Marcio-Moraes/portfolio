@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Márcio Moraes - Front End</title>
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/menu_mobile.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="caixa">
+        <div class="logo">
+          <a href="./">
+              M
+          </a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre mim</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Lista de Menu Mobile -->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+
+          <!-- Overlay content -->
+          <div class="overlay-content">
+            <a href="index.html" onclick="closeNav()">Home</a>
+            <a href="sobre.html" onclick="closeNav()">Sobre mim</a>
+            <a href="projetos.html" onclick="closeNav()">Projetos</a>
+            <a href="contato.html" onclick="closeNav()">Contato</a>
+          </div>
+        </div>
+
+        <div class="menu_mobile_icon" onclick="openNav()">
+          <div class="div_barra_menu_mobile"></div>
+          <div class="div_barra_menu_mobile"></div>
+          <div class="div_barra_menu_mobile"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section_contato" id="section_contato">
+        <div class="caixa">
+            <div class="title">
+                <h1 style="text-align:center;">
+                    Fale <span>Comigo!</span>
+                </h1>
+                <p style="text-align: center;">Você pode entrar em contato por E-mail, Linkedin, ou pelo Whatsapp!</p>
+            </div>
+
+            <ul class="contact_list">
+                <li><a href="mailto:marciomoraes.cdd@gmail.com">marciomoraes.cdd@gmail.com</a></li>
+            </ul>
+
+            <ul class="contact_list">
+                <li><a href="https://linkedin.com/in/marciomsilva/" target="_blank">Linkedin</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5581986709660&text=Ol%C3%A1%20M%C3%A1rcio%2C%20vim%20pelo%20teu%20portf%C3%B3lio!"
+                        target="_blank">Whatsapp</a></li>
+                <li><a href="https://github.com/marcio-moraes" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </section>
+    </main>
+  <footer class="footer">
+      <p>Márcio Moraes - 2022</span></p>
+
+      <div onclick="subirTela()" class="scrollbutton animate__animated animate__bounce animate__infinite">
+          <div>
+              <img src="assets/icons/arrow_top.png" alt="">
+          </div>
+      </div>
+  </footer>
+  
+  <script src="assets/js/menu_mobile.js"></script>
+</body>
+
+</html>

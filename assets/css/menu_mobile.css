@@ -8,31 +8,39 @@
 }
 
 .overlay {
-  height: 100%;
-  width: 0;
+  height: 0;
+  width: 100%;
   position: fixed;
   z-index: 10;
   top: 0;
   left: 0;
-  background-color: var(--amarelo-1);
+  background-color: rgba(0,0,0,.3);
   overflow-x: hidden;
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  background-color: rgba(0,0,0,.8);
+  min-height: 360px;
+  border-radius: 18px;
   width: 100%;
+  max-width: 320px;
   text-align: center;
-  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 26px;
-  color: #fff;
-  color: var(--bg-escuro-1);
+  color: var(--branco-1);
   font-weight: bold;
   text-transform: uppercase;
   display: block;
@@ -42,7 +50,7 @@
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #f1f1f1;
+  color: var(--amarelo-1);
 }
 
 .overlay .closebtn {
@@ -50,6 +58,7 @@
   top: 20px;
   right: 45px;
   font-size: 60px;
+  z-index: 9;
 }
 
 @media(max-width: 900px) {
@@ -65,7 +74,7 @@
 
   .overlay .closebtn {
     font-size: 40px;
-    top: 15px;
-    right: 35px;
+    top: 25px;
+    right: 45px;
   }
 }

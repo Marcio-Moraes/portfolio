@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Márcio Moraes - Front End</title>
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/menu_mobile.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="caixa">
+        <div class="logo">
+          <a href="./">
+              M
+          </a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre mim</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Lista de Menu Mobile -->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+
+          <!-- Overlay content -->
+          <div class="overlay-content">
+            <a href="index.html" onclick="closeNav()">Home</a>
+            <a href="sobre.html" onclick="closeNav()">Sobre mim</a>
+            <a href="projetos.html" onclick="closeNav()">Projetos</a>
+            <a href="contato.html" onclick="closeNav()">Contato</a>
+          </div>
+        </div>
+
+        <div class="menu_mobile_icon" onclick="openNav()">
+          <div class="div_barra_menu_mobile"></div>
+          <div class="div_barra_menu_mobile"></div>
+          <div class="div_barra_menu_mobile"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section_sobre" id="section_sobre">
+        <div class="caixa">
+          <div class="image_sobre">
+            <img src="assets/images/marcio-moraes-desenvolvedor-front-end.jpg" alt="" class="" />
+          </div>
+          <div class="sobre_content">
+            <div class="title">
+              <h1>
+                Conheça um pouco <span>sobre mim</span>.
+              </h1>
+              <p>
+                Comecei como Desenvolvedor Front End em 2016. De 2009 à 2013 atuei como instrutor em cursos presenciais de Excel Avançado, Computação Gráfica e Desenvolvimento Web. Atualmente sou Front End JavaScript e WordPress para uma agência de São Paulo.
+              </p>
+
+              <p>
+                Já desenvolvi vários tipos de projetos como: Lojas Virtuais,
+                Sites Institucionais. Atualmente venho focando em tecnologias
+                javascript com o React. Mas desenvolvo também projetos em
+                WordPress
+              </p>
+
+              <p>No tempo livre eu gosto de tocar teclado, Piano, gosto de ler livros de tecnologia e também de outras áreas. Gosto também de praticar corrida e um pouco de musculação, o que tem contribuido muito no meu foco e produtividade no home office.</p>
+
+              <div class="div_techs">
+                <img src="assets/icons/tech/html5.svg" alt="" />
+                <img src="assets/icons/tech/css.svg" alt="" />
+                <img src="assets/icons/tech/bootstrap.svg" alt="" />
+                <img src="assets/icons/tech/javascript.svg" alt="" />
+                <img src="assets/icons/tech/typescript.svg" alt="" />
+                <img src="assets/icons/tech/react.svg" alt="" />
+                <img src="assets/icons/tech/git.svg" alt="" />
+                <img src="assets/icons/tech/github.svg" alt="" />
+                <img src="assets/icons/tech/wordpress_original.svg" alt="" />
+                <img src="assets/icons/tech/codingbrowser.svg" alt="" />
+                <img src="assets/icons/tech/figma_logo.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_carreira">
+        <div class="caixa">
+          <div class="title">
+            <h1>
+              <span>Carreira</span>!
+            </h1>
+          </div>
+          <div class="div_content_carreira">
+            <h2 class="title_cargo">Front-End JavaScript</h2>
+            <h3 class="title_empresa">Agencia Weber - <span>Fevereiro de 2022 - O Momento..</span></h3>
+            <p>Criação e Manutenção de Mega Lojas Virtuais, Blogs, Portais, LandingPages, Projetos Personalizados</p>
+          </div>
+          <div class="div_content_carreira">
+            <h2 class="title_cargo">Front-End WordPress</h2>
+            <h3 class="title_empresa">Agência Lider Digital - <span>Dezembro de 2019 - Julho de 2021</span></h3>
+            <p>Desenvolvimento de Lojas Virtuais, Sites Institucionais, LandingPages, Blogs e Hotsites</p>
+          </div>
+          <div class="div_content_carreira">
+            <h2 class="title_cargo">Front-End JavaScript</h2>
+            <h3 class="title_empresa">Promova Comunicação e Marketing - <span>Abriu de 2019 - Dezembro de 2019</span></h3>
+            <p>Desenvolvimento de LandingPages, Sites Institucionais, Blogs, Portais</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Márcio Moraes - 2022</span></p>
+
+        <div onclick="subirTela()" class="scrollbutton animate__animated animate__bounce animate__infinite">
+            <div>
+                <img src="assets/icons/arrow_top.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/menu_mobile.js"></script>
+</body>
+
+</html>

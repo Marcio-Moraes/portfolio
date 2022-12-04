@@ -1,16 +1,14 @@
 function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.height = "100%";
 }
 
 function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.height = "0%";
 }
 
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
+let areaTransparent = document.querySelector('.overlay');
+areaTransparent.addEventListener('click', (e)=>{
+    if(e.target.className == 'overlay'){
+        closeNav();
     }
-}
+});

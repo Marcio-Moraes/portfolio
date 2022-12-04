@@ -16,6 +16,7 @@ projetosLista.map((item, index)=>{
 
   // github
   modeloProjeto.querySelector('.div_code_github a').href = item.gitcode;
+  // m('.div_insert_projetos.projetos_home').append(modeloProjeto);
   m('.div_insert_projetos.projetos_home').append(modeloProjeto);
 
   // div_tecnologias_item
