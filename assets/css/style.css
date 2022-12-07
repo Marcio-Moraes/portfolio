@@ -18,7 +18,6 @@
 }
 
 .div_navegation{
-    /* background-color: #000; */
     background-color: #ffb636;
     position: fixed;
     top: calc(50% - 120px);
@@ -37,7 +36,6 @@
     align-items: center;
     justify-content: center;
     width: 50px;
-    /* background-color: aqua; */
     padding: 0;
 }
 .div_navegation ul li{
