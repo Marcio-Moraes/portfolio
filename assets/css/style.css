@@ -20,7 +20,7 @@
 .div_navegation{
     background-color: #ffb636;
     position: fixed;
-    top: calc(50% - 120px);
+    top: calc(50% - 50px);
     left: 0;
     height: 200px;
     width: 50px;
