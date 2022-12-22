@@ -264,7 +264,7 @@ header .caixa {
 }
 
 .section_sobre {
-    background-color: var(--bg-escuro-2);
+    background-color: var(--bg-escuro-1);
     color: #fff;
     font-family: 'Roboto', sans-serif;
     padding: 10px;
