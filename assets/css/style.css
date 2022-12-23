@@ -20,7 +20,7 @@
 .div_navegation{
     background-color: #ffb636;
     position: fixed;
-    top: calc(50% - 50px);
+    top: calc(50% - 100px);
     left: 0;
     height: 200px;
     width: 50px;
@@ -294,7 +294,7 @@ header .caixa {
 }
 
 .div_techs img {
-    max-width: 60px;
+    max-width: 25px;
     padding: 6px;
     background-color: var(--text-footer);
 }
