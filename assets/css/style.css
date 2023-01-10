@@ -356,7 +356,7 @@ header .caixa {
 
 .section_portfolio .caixa {
     flex-direction: column;
-
+    min-height: 80vh;
 }
 
 .tipo_projeto {
