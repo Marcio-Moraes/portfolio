@@ -16,7 +16,10 @@
     background-color: var(--bg-escuro-1);
     color: var(--branco-1);
 }
-
+header,
+main{
+    z-index: 1 !important;
+}
 .div_navegation{
     background-color: #ffb636;
     position: fixed;
