@@ -16,9 +16,11 @@
     background-color: var(--bg-escuro-1);
     color: var(--branco-1);
 }
-header,
-main{
-    z-index: 1 !important;
+.menu,
+.menu_mobile_icon,
+.div_navegation{
+    z-index:1;
+    position:relative;
 }
 .div_navegation{
     background-color: #ffb636;
