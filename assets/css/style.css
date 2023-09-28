@@ -1,6 +1,6 @@
 :root {
-    /* --amarelo-1: #ffb636;
-    --amarelo-1: ##9966e7; */
+    /* --amarelo-1: #ffb636;*/
+    /* --amarelo-1: ##9966e7;  */
     --branco-1: #fff;
     --branco-2: #c1c1c1;
     /* --bg-escuro-1: #1f1f23; */
@@ -130,11 +130,24 @@
     padding: 12px;
 }
 
+
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: #000;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #9966e7;
+    border-radius: 20px;
 }
 
 .caixa {
