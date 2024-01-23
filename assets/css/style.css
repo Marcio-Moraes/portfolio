@@ -13,6 +13,12 @@
     font-family: 'roboto';
 }
 
+.link{
+    color: var(--amarelo-1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
 ::selection {
     background-color: var(--bg-escuro-1);
     color: var(--branco-1);
@@ -427,7 +433,7 @@ header .caixa {
     transition: all ease .2s;
 }
 .item_projeto:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .removeitem {
     display: none;
