@@ -3,9 +3,10 @@
     --amarelo-1: #9966e7;
     --branco-1: #fff;
     --branco-2: #c1c1c1;
-    /* --bg-escuro-1: #1f1f23; */
+    
     --bg-escuro-1: #08070b;
     --bg-escuro-2: #1B1A20;
+    --bg-escuro-3: #1f1f23;
     --text-footer: #787878;
 }
 
@@ -91,8 +92,8 @@
     display: none;
 }
 .div_live_preview{
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 3px;
@@ -426,7 +427,8 @@ header .caixa {
 .item_projeto {
     max-width: 320px;
     padding: 30px 20px;
-    background-color: var(--bg-escuro-1);
+    background-color: var(--bg-escuro-2);
+    box-shadow: 1px 1px 3px var(--bg-escuro-1);
     border: solid 1px var(--amarelo-1);
     margin: 15px;
     border-radius: 6px;
@@ -480,7 +482,8 @@ header .caixa {
     content: '';
     width: 100px;
     height: 1px;
-    background-color: var(--branco-2);
+    background-color: var(--bg-escuro-1);
+    background-color: var(--amarelo-1);
     display: inline-block;
     margin: 4px 0;
 }
@@ -490,7 +493,8 @@ header .caixa {
 }
 
 .div_description_project{
-    background-color: var(--bg-escuro-2);
+    background-color: var(--bg-escuro-3);
+    /* background-color: var(--amarelo-1); */
 }
 .div_tecnologias_item,
 .div_description_item{
