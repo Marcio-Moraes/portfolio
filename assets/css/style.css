@@ -79,7 +79,14 @@
     justify-content: space-between;
     min-height: 30px;
     cursor: pointer;
-    padding: 12px;
+    padding: 14px 12px;
+    background-color: var(--bg-escuro-3);
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px var(--bg-escuro-1);
+    border: solid 1px var(--amarelo-1);
+}
+.menu_mobile_icon:hover{
+    border: solid 1px var(--amarelo-1);
 }
 
 .div_barra_menu_mobile {
@@ -87,6 +94,11 @@
     height: 3px;
     background-color: var(--amarelo-1);
 }
+.menu_mobile_icon:hover .div_barra_menu_mobile {
+    background-color: var(--branco-1);    
+}
+
+
 /* div container modelo */
 .div_container_modelo{
     display: none;
@@ -264,6 +276,10 @@ header .caixa {
     max-width: 520px;
     padding: 10px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .title h1 {
@@ -286,7 +302,18 @@ header .caixa {
     color: var(--branco-1);
     font-family: 'Roboto';
     text-align: center;
+    background-color: var(--bg-escuro-2);
+    padding: 10px 12px;
+    line-height: 1.5em;
 }
+    
+.p_description_home{
+    background-color: var(--bg-escuro-2);
+    padding: 10px 12px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
 
 .image_topo img {
     max-width: 100%;
@@ -430,8 +457,8 @@ header .caixa {
     background-color: var(--bg-escuro-2);
     box-shadow: 1px 1px 3px var(--bg-escuro-1);
     border: solid 1px var(--amarelo-1);
-    margin: 15px;
-    border-radius: 6px;
+    margin: 30px 15px;
+    border-radius: 3px;
     transition: all ease .2s;
 }
 .item_projeto:hover {
@@ -545,18 +572,25 @@ header .caixa {
 }
 
 .contact_list li a {
-    color: #fff;
-    padding: 10px;
-    margin: 5px;
+    color: #fff;    
+    margin: 12px;
     text-decoration: none;
-    box-shadow: 1px 1px 1px #333;
-    background-color: #333;
+    height: 48px;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: var(--branco-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px var(--amarelo-1);
+}
+.contact_list li a img{
+    /* background-color: #fff; */
+    height: 48px;
+    /* border-radius: 50%; */
+
 }
 
-.contact_list li a:hover {
-    background-color: var(--amarelo-1);
-    color: var(--bg-escuro-2);
-}
 
 
 /* footer */

@@ -15,7 +15,7 @@
   z-index: 10;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0,0,0,.9);
   overflow-x: hidden;
   transition: 0.5s;
   display: flex;
@@ -25,9 +25,10 @@
 
 .overlay-content {
   position: relative;
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0,0,0,.9);
+  border: solid 1px var(--amarelo-1);
   min-height: 360px;
-  border-radius: 18px;
+  border-radius: 6px;
   width: 100%;
   max-width: 320px;
   text-align: center;
