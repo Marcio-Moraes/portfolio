@@ -569,6 +569,7 @@ header .caixa {
 .contact_list li {
     list-style: none;
     padding: 20px 0;
+    margin: 10px 20px;
 }
 
 .contact_list li a {
