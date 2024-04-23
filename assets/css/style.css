@@ -78,21 +78,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 28px;
+    min-height: 20px;
     cursor: pointer;
-    padding: 12px 10px;
+    padding: 10px 10px;
     background-color: var(--bg-escuro-3);
     border-radius: 2px;
     box-shadow: 1px 1px 3px var(--bg-escuro-1);
     border: solid 1px var(--amarelo-1);
 }
 .menu_mobile_icon:hover{
-    border: solid 1px var(--branco-1);
+    border: solid 1px var(--amarelo-1);
     background-color: var(--amarelo-1);
 }
 
 .div_barra_menu_mobile {
-    width: 36px;
+    width: 22px;
     height: 3px;
     background-color: var(--amarelo-1);
 }
@@ -637,7 +637,7 @@ footer.footer p {
     
 
     .div_barra_menu_mobile {
-        width: 32px;
+        width: 22px;
         height: 3px;
     }
 
