@@ -4,8 +4,9 @@
     --branco-1: #fff;
     --branco-2: #c1c1c1;
     
-    --bg-escuro-1: #08070b;
-    --bg-escuro-2: #1B1A20;
+    /* --bg-escuro-1: #08070b; */
+    --bg-escuro-1: #1B1A20;
+    --bg-escuro-2: #08070b;
     --bg-escuro-3: #1f1f23;
     --text-footer: #787878;
 }
@@ -77,20 +78,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 30px;
+    min-height: 28px;
     cursor: pointer;
-    padding: 14px 12px;
+    padding: 12px 10px;
     background-color: var(--bg-escuro-3);
-    border-radius: 3px;
+    border-radius: 2px;
     box-shadow: 1px 1px 3px var(--bg-escuro-1);
     border: solid 1px var(--amarelo-1);
 }
 .menu_mobile_icon:hover{
-    border: solid 1px var(--amarelo-1);
+    border: solid 1px var(--branco-1);
+    background-color: var(--amarelo-1);
 }
 
 .div_barra_menu_mobile {
-    width: 40px;
+    width: 36px;
     height: 3px;
     background-color: var(--amarelo-1);
 }
@@ -183,11 +185,17 @@ body::-webkit-scrollbar-thumb {
     color: var(--branco-1);
     font-weight: 400;
     max-width: 260px;
-    padding: 10px 14px;
+    padding: 14px 24px;
+    margin-top: 10px;
+    text-transform: uppercase;
     display: inline-block;
     text-align: center;
     text-decoration: none;
-
+    box-shadow: 1px 1px 3px var(--bg-escuro-2);
+    border-radius: 2px;
+}
+.btn:hover{
+    background-color: var(--bg-escuro-2);
 }
 
 .btn_fale_comigo {
@@ -216,6 +224,8 @@ header .caixa {
     justify-content: space-between;
     align-items: center;
     min-height: 10vh;
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 
 .section_topo {
@@ -262,8 +272,8 @@ header .caixa {
 }
 
 .menu ul a:hover {
-    color: var(--amarelo-1);
-    background-color: var(--bg-escuro-2);
+    color: var(--branco-1);
+    background-color: var(--amarelo-1);
 }
 
 @media(min-width: 821px) {
@@ -302,16 +312,17 @@ header .caixa {
     color: var(--branco-1);
     font-family: 'Roboto';
     text-align: center;
-    background-color: var(--bg-escuro-2);
+    /* background-color: var(--bg-escuro-2); */
     padding: 10px 12px;
     line-height: 1.5em;
 }
     
 .p_description_home{
-    background-color: var(--bg-escuro-2);
-    padding: 10px 12px;
+    padding: 0px 0px 10px 0 !important;
     display: inline-block;
     border-radius: 3px;
+    color: var(--branco-2);
+    font-size: 14px !important;
 }
 
 
@@ -389,6 +400,7 @@ header .caixa {
 .section_carreira p{
     color: var(--branco-1);
     font-weight: normal;
+    text-align: center;
 }
 .title_cargo{
     font-size: 1.5em;
@@ -404,6 +416,9 @@ header .caixa {
     font-weight: normal;
     color: var(--branco-1);
 }
+.div_content_carreira .title_empresa{
+    text-align: center;
+}
 
 .section_portfolio {
     background-color: var(--bg-escuro-1);
@@ -417,9 +432,11 @@ header .caixa {
 
 .tipo_projeto {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 50px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .tipo_projeto button {
@@ -449,17 +466,20 @@ header .caixa {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .item_projeto {
     max-width: 320px;
     padding: 30px 20px;
-    background-color: var(--bg-escuro-2);
+    background-color: var(--bg-escuro-1);
     box-shadow: 1px 1px 3px var(--bg-escuro-1);
     border: solid 1px var(--amarelo-1);
     margin: 30px 15px;
     border-radius: 3px;
     transition: all ease .2s;
+    box-sizing: border-box;
 }
 .item_projeto:hover {
     transform: scale(1.1);
@@ -614,10 +634,11 @@ footer.footer p {
     .logo {
         max-width: 40px;
     }
+    
 
     .div_barra_menu_mobile {
         width: 32px;
-        height: 5px;
+        height: 3px;
     }
 
     header {
