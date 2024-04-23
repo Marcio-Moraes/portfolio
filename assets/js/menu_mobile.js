@@ -12,3 +12,13 @@ areaTransparent.addEventListener('click', (e)=>{
         closeNav();
     }
 });
+
+
+let btnMenuMobile = document.querySelector('.menu_mobile_icon');
+btnMenuMobile.addEventListener('click', openNav);
+
+
+let listaMenuMobile = document.querySelectorAll('.overlay-content a');
+listaMenuMobile.forEach((i)=>{
+    i.addEventListener('click', closeNav);
+});
