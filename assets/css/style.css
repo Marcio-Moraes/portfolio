@@ -482,7 +482,10 @@ header .caixa {
     box-sizing: border-box;
 }
 .item_projeto:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+.item_projeto:not(:hover) {
+    opacity: 0.5;
 }
 .removeitem {
     display: none;
@@ -504,7 +507,8 @@ header .caixa {
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
-    opacity: .6;
+    /* opacity: .6; */
+    opacity: 1;
 }
 
 .item_projeto:hover img {
