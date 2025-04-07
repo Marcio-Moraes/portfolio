@@ -1,6 +1,7 @@
 :root {
     /* --amarelo-1: #ffb636; */
-    --amarelo-1: #9966e7;
+    /* --amarelo-1: #9966e7; */
+    --amarelo-1: rgb(0, 113, 183);
     --branco-1: #fff;
     --branco-2: #c1c1c1;
     
